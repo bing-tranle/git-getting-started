@@ -6,3 +6,5 @@
 # Inspecting a Repository
 # Viewing Old Commits
 # Undoing Changes
+
+# Wrong modifying
