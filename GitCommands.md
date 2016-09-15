@@ -34,7 +34,7 @@
 	git log --graph --decorate --oneline 
 		-> Show history with commit ID and message in column format
 
-# Viewing old commits
+# Viewing old commit
 	git checkout -b <new-branch>
 	
 	git checkout master
@@ -47,8 +47,6 @@
 		-> Update all files in the working directory to match the specified commit. This will put you in a detached HEAD state.
 		
 	git checkout HEAD <file>
-		-> Check out the most recent version of file if don’t want to keep the old version after execute git checkout <commit> <file>.
-		
-# Undoing Changes
+		-> Check out the most recent version of file after revert
 		
 	
