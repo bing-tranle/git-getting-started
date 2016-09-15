@@ -1,17 +1,17 @@
 # Saving Changes
+## Git Add
 	git add <file>
 	git add <dir>
 	git add . 
-Add current dir
-
+		-> Add current dir
+## Git Commit
 	git commit
 	git commit -a 
 		-> Snapshot all change in working dir
-
 # Inspecting a repository
 	git log
 	git log -n <limit>
-		-> show log of limit the number of commits
+		-> Show log of limit the number of commits
 		
 	git log --oneline
 	git log --stat 
