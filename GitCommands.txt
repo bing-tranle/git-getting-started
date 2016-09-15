@@ -4,3 +4,5 @@
 
 # Git Stash
 # Inspecting a Repository
+# Viewing Old Commits
+# Undoing Changes

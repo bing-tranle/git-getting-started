@@ -47,6 +47,12 @@
 		-> Update all files in the working directory to match the specified commit. This will put you in a detached HEAD state.
 		
 	git checkout HEAD <file>
-		-> Check out the most recent version of file after revert
+		-> Check out the most recent version of file after chec kout a revison in history.
+		
+# Undoing Changes
+## git checkout
+## git revert
+## git reset
+## git clean
 		
 	
