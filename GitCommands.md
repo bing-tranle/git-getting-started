@@ -42,3 +42,6 @@
 		
 	git checkout <commit> <file>
 		-> Check out a previous version of a file
+		
+	git checkout <commit>
+		-> Update all files in the working directory to match the specified commit
