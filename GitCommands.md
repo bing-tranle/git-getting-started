@@ -2,13 +2,13 @@
 	git add <file>
 	git add <dir>
 	git add . 
-		-> Add current dir
+Add current dir
 
 	git commit
 	git commit -a 
 		-> Snapshot all change in working dir
 
-# Inspecting a repo
+# Inspecting a repository
 	git log
 	git log -n <limit>
 		-> show log of limit the number of commits
@@ -41,7 +41,9 @@
 		-> Return to the master branch
 		
 	git checkout <commit> <file>
-		-> Check out a previous version of a file
+		-> Check out a previous version of a file. <file> will be added into staging area.
 		
 	git checkout <commit>
-		-> Update all files in the working directory to match the specified commit
+		-> Update all files in the working directory to match the specified commit. This will put you in a detached HEAD state.
+		
+	
