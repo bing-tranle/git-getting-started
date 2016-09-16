@@ -107,6 +107,25 @@
 		-> Revert the commit we just created.
 		
 ### Using git reset
+	git reset <file>
+		-> Remove the specified file from the staging area, 
+		but leave the working directory unchanged. 
+		This unstages a file without overwriting any changes.
+		-> Undo git add on a file
+		
+	git reset
+		-> Reset the staging area to match the most recent commit, 
+		but leave the working directory unchanged.
+		-> Undo git add for all modified files
+		
+	git reset --hard
+		-> Reset the staging area and the working directory to match the most recent commit. 
+		Overwrite all changes in the working directory with recent commit. 
+		Throw away your local developments before using it.
+		
+	git reset <commit>
+		
+		
 	
 		
 	
