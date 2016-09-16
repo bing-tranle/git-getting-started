@@ -11,3 +11,4 @@
 
 # Update to stash
 
+# Commit for reset by "git reset <commit>"
