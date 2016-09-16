@@ -120,10 +120,20 @@
 		
 	git reset --hard
 		-> Reset the staging area and the working directory to match the most recent commit. 
-		Overwrite all changes in the working directory with recent commit. 
+		Overwrite all changes in the working directory with recent remote commit. 
 		Throw away your local developments before using it.
+		-> Behave like git checkout HEAD <file>
 		
 	git reset <commit>
+		-> Move the current branch tip backward to <commit>, 
+		reset the staging area to match, but leave the working directory alone. 
+		All changes made since <commit> will reside in the working directory, 
+		which lets you re-commit the project history using cleaner, more atomic snapshots.
+	
+	git reset --hard <commit>
+		-> Move the current branch tip backward to <commit> and reset both the staging 
+		area and the working directory to match. his obliterates not only the uncommitted 
+		changes, but all commits after <commit>, as well.
 		
 		
 	
