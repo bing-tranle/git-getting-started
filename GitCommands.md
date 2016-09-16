@@ -38,6 +38,9 @@
 ### Stashing your work
 	git stash
 		-> Temporary save current working
+		
+	git stash -u
+		-> Stash untracked file (file has not been added)
 	
 ### Re-apply your stashed changes
 	git stash pop
@@ -45,6 +48,7 @@
 		
 	git stash apply
 		-> Reapply the changes to your working copy and keep them in your stash
+	
 
 # Viewing old commits
 	git checkout -b <new-branch>
