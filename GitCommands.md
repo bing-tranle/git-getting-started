@@ -1,10 +1,10 @@
 # Saving Changes
-## Git Add
+### Git Add
 	git add <file>
 	git add <dir>
 	git add . 
 		-> Add current dir
-## Git Commit
+### Git Commit
 	git commit
 	git commit -a 
 		-> Snapshot all change in working dir
@@ -33,6 +33,18 @@
 		
 	git log --graph --decorate --oneline 
 		-> Show history with commit ID and message in column format
+		
+# Git Stash
+### Stashing your work
+	git stash
+		-> Temporary save current working
+	
+### Re-apply your stashed changes
+	git stash pop
+		-> Removes the changes from your stash and reapplies them to your working copy
+		
+	git stash apply
+		-> Reapply the changes to your working copy and keep them in your stash
 
 # Viewing old commits
 	git checkout -b <new-branch>
