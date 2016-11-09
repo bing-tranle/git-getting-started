@@ -8,3 +8,10 @@
 # Undoing Changes
 
 # Wrong modifying
+
+# Update to stash
+
+# Commit for reset by "git reset <commit>"
+
+
+# Commit for reset by "git reset <commit> 2"

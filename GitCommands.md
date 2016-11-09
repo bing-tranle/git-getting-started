@@ -1,10 +1,10 @@
 # Saving Changes
-## Git Add
+### Git Add
 	git add <file>
 	git add <dir>
 	git add . 
 		-> Add current dir
-## Git Commit
+### Git Commit
 	git commit
 	git commit -a 
 		-> Snapshot all change in working dir
@@ -33,6 +33,47 @@
 		
 	git log --graph --decorate --oneline 
 		-> Show history with commit ID and message in column format
+		
+# Git Stash
+### Stashing your work
+	git stash
+		-> Temporary save current working
+		
+	git stash -u
+		-> Stash untracked file (file has not been added)
+		
+	git stash save <message>
+		-> Annotate your stash with a description
+		
+	git stash list
+		-> List out all available stashes
+		
+### Re-apply your stashed changes
+	git stash pop
+		-> Removes the changes from your stash and reapplies them to your working copy
+		
+	git stash apply
+		-> Reapply the changes to your working copy and keep them in your stash
+	
+	git stash pop <stash version>
+		-> Reapply specific stash
+		
+	git stash -p
+		-> Iterate through each changed “hunk” and ask whether you wish to stash it
+		
+	git stash branch <new branch>
+		-> Create new branch from you stash
+		
+### Viewing stash diff
+	git stash show
+		-> View a summary of a stash
+		
+	git stash show -p
+		-> View full diff of a stash
+		
+### Cleaning up your stash
+	git stash drop <stash id>
+		-> Delete all stash
 
 # Viewing old commits
 	git checkout -b <new-branch>
@@ -42,13 +83,59 @@
 		
 	git checkout <commit> <file>
 		-> Check out a previous version of a file. <file> will be added into staging area.
+		-> Remember, unlike checking out a commit, this does affect the current state
+		of your project. The old file revision will show up as a “Change to be committed,”
+		giving you the opportunity to revert back to the previous version of the file.
 		
 	git checkout <commit>
-		-> Update all files in the working directory to match the specified commit. This will put you in a detached HEAD state.
+		-> Update all files in the working directory to match the specified commit.
+		This will put you in a detached HEAD state.
 		
 	git checkout HEAD <file>
-		-> Check out the most recent version of file if don’t want to keep the old version after execute git checkout <commit> <file>.
+		-> Check out the most recent version of file if don’t want to keep the
+		old version after execute git checkout <commit> <file>.
 		
 # Undoing Changes
+### Using git checkout
+	
+### Using git revert
+	git revert <commit>
+		-> Generate a new commit that undoes all of the changes introduced in <commit>,
+		then apply it to the current branch.
+	
+	git revert HEAD
+		-> Revert the commit we just created.
+		
+### Using git reset
+	git reset <file>
+		-> Remove the specified file from the staging area, 
+		but leave the working directory unchanged. 
+		This unstages a file without overwriting any changes.
+		-> Undo git add on a file
+		
+	git reset
+		-> Reset the staging area to match the most recent commit, 
+		but leave the working directory unchanged.
+		-> Undo git add for all modified files
+		
+	git reset --hard
+		-> Reset the staging area and the working directory to match the most recent commit. 
+		Overwrite all changes in the working directory with recent remote commit. 
+		Throw away your local developments before using it.
+		-> Behave like git checkout HEAD <file>
+		
+	git reset <commit>
+		-> Move the current branch tip backward to <commit>, 
+		reset the staging area to match, but leave the working directory alone. 
+		All changes made since <commit> will reside in the working directory, 
+		which lets you re-commit the project history using cleaner, more atomic snapshots.
+	
+	git reset --hard <commit>
+		-> Move the current branch tip backward to <commit> and reset both the staging 
+		area and the working directory to match. his obliterates not only the uncommitted 
+		changes, but all commits after <commit>, as well.
+		
+		
+	
 		
 	
