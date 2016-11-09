@@ -12,3 +12,5 @@ Learning about Git
 # Fiveth modifying
 
 # 6th modifying
+
+# 7th commit
