@@ -8,13 +8,3 @@ Learning about Git
 # Third modifying
 
 # Fourth modifying
-
-# Fiveth modifying
-
-# 6th modifying
-
-# 7th Modify
-
-# 8th Modify
-
-# 9th Modify
