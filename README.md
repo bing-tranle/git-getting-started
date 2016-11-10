@@ -14,7 +14,3 @@ Learning about Git
 # 6th modifying
 
 # 7th Modify
-
-# 8th Modify
-
-# 9th Modify
